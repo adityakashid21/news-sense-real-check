@@ -130,8 +130,6 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
-    background-image: var(--gradient-floating);
-    background-attachment: fixed;
   }
 }
 
