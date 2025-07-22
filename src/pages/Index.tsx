@@ -4,7 +4,6 @@ import IntegrationGuide from '@/components/IntegrationGuide';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Shield, Zap, Target, Users } from 'lucide-react';
-import heroImage from '@/assets/news-detector-hero.png';
 
 const Index = () => {
   return (
@@ -13,22 +12,16 @@ const Index = () => {
       <section className="relative overflow-hidden min-h-screen flex items-center">
         <div className="absolute inset-0 bg-gradient-to-br from-primary/20 via-transparent to-transparent" />
         
-        {/* Floating Elements */}
-        <div className="absolute top-20 left-10 w-20 h-20 bg-primary/10 rounded-full blur-xl float-gentle" />
-        <div className="absolute top-40 right-20 w-32 h-32 bg-primary/5 rounded-full blur-2xl float-medium" />
-        <div className="absolute bottom-32 left-1/4 w-16 h-16 bg-primary/15 rounded-full blur-lg float-intense" />
-        <div className="absolute top-1/3 right-1/3 w-24 h-24 bg-primary/8 rounded-full blur-xl float-gentle" style={{ animationDelay: '2s' }} />
-        
         <div className="relative container mx-auto px-4 py-16 lg:py-24">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
-              <Badge variant="secondary" className="w-fit magical-glow animate-bounce">
-                <Zap className="w-3 h-3 mr-1 animate-pulse" />
+              <Badge variant="secondary" className="w-fit">
+                <Zap className="w-3 h-3 mr-1" />
                 AI-Powered Detection
               </Badge>
-              <h1 className="text-4xl lg:text-6xl font-bold leading-tight animate-fade-in">
+              <h1 className="text-4xl lg:text-6xl font-bold leading-tight">
                 Advanced{' '}
-                <span className="aurora-text animate-aurora-shift">
+                <span className="text-primary">
                   Fake News
                 </span>{' '}
                 Detection
@@ -53,20 +46,14 @@ const Index = () => {
                 </div>
               </div>
             </div>
-            <div className="relative float-medium">
-              <div className="cyber-border rounded-2xl p-1 magical-glow particle-effect">
-                <img 
-                  src={heroImage} 
-                  alt="AI News Detection Visualization"
-                  className="w-full rounded-xl shadow-2xl"
-                />
+            <div className="relative">
+              <div className="bg-card border rounded-2xl p-8 text-center">
+                <div className="w-24 h-24 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Shield className="w-12 h-12 text-primary" />
+                </div>
+                <h3 className="text-xl font-semibold mb-2">AI Detection System</h3>
+                <p className="text-muted-foreground">Real-time analysis using advanced ML algorithms</p>
               </div>
-              
-              {/* Enhanced Floating Elements */}
-              <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-primary/20 rounded-full blur-3xl animate-magical-pulse" />
-              <div className="absolute -top-6 -left-6 w-40 h-40 bg-primary/10 rounded-full blur-3xl float-gentle" />
-              <div className="absolute top-1/2 -right-8 w-20 h-20 bg-primary/30 rounded-full blur-2xl animate-pulse" />
-              <div className="absolute bottom-1/4 -left-8 w-24 h-24 bg-primary/25 rounded-full blur-xl float-intense" style={{ animationDelay: '1s' }} />
             </div>
           </div>
         </div>
@@ -83,12 +70,12 @@ const Index = () => {
           </div>
           
           <div className="grid md:grid-cols-3 gap-8 mb-16">
-            <Card className="float-gentle border-border/50 bg-card/50 backdrop-blur-sm hover:bg-card/80 transition-all duration-500 magical-glow group cursor-pointer">
+            <Card className="hover:shadow-lg transition-all duration-300">
               <CardHeader className="text-center">
-                <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:animate-float-medium transition-all duration-300">
-                  <Shield className="w-6 h-6 text-primary group-hover:animate-pulse" />
+                <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mx-auto mb-4">
+                  <Shield className="w-6 h-6 text-primary" />
                 </div>
-                <CardTitle className="text-xl group-hover:aurora-text transition-all duration-300">Linguistic Analysis</CardTitle>
+                <CardTitle className="text-xl">Linguistic Analysis</CardTitle>
               </CardHeader>
               <CardContent>
                 <CardDescription className="text-center">
@@ -98,12 +85,12 @@ const Index = () => {
               </CardContent>
             </Card>
 
-            <Card className="float-medium border-border/50 bg-card/50 backdrop-blur-sm hover:bg-card/80 transition-all duration-500 magical-glow group cursor-pointer" style={{ animationDelay: '0.5s' }}>
+            <Card className="hover:shadow-lg transition-all duration-300">
               <CardHeader className="text-center">
-                <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:animate-float-intense transition-all duration-300">
-                  <Target className="w-6 h-6 text-primary group-hover:animate-pulse" />
+                <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mx-auto mb-4">
+                  <Target className="w-6 h-6 text-primary" />
                 </div>
-                <CardTitle className="text-xl group-hover:aurora-text transition-all duration-300">Ensemble Modeling</CardTitle>
+                <CardTitle className="text-xl">Ensemble Modeling</CardTitle>
               </CardHeader>
               <CardContent>
                 <CardDescription className="text-center">
@@ -113,12 +100,12 @@ const Index = () => {
               </CardContent>
             </Card>
 
-            <Card className="float-intense border-border/50 bg-card/50 backdrop-blur-sm hover:bg-card/80 transition-all duration-500 magical-glow group cursor-pointer" style={{ animationDelay: '1s' }}>
+            <Card className="hover:shadow-lg transition-all duration-300">
               <CardHeader className="text-center">
-                <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:animate-float-gentle transition-all duration-300">
-                  <Zap className="w-6 h-6 text-primary group-hover:animate-pulse" />
+                <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mx-auto mb-4">
+                  <Zap className="w-6 h-6 text-primary" />
                 </div>
-                <CardTitle className="text-xl group-hover:aurora-text transition-all duration-300">Real-time Processing</CardTitle>
+                <CardTitle className="text-xl">Real-time Processing</CardTitle>
               </CardHeader>
               <CardContent>
                 <CardDescription className="text-center">
